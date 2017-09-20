@@ -142,7 +142,64 @@ int main()
 			switch (error)
 			{
 			case WSANOTINITIALISED:
-				printf("Wsa was not successfully initialized.\n");
+				printf("Wsa was not successfully initialized\n");
+				std::cin.get();
+				break;
+			case WSAENETDOWN:
+				printf("Network subsystem failed.\n");
+				std::cin.get();
+				break;
+			case WSAEFAULT:
+				printf("Buffer not in user address space, or len too small\n");
+				std::cin.get();
+				break;
+			case WSAEINTR:
+				printf("Blocking call cancelled by WSACancelBlockingCall\n");
+				std::cin.get();
+				break;
+			case WSAEINPROGRESS:
+				printf("Blocking call in progress, or service provider processing callback\n");
+				std::cin.get();
+				break;
+			case WSAEINVAL:
+				printf("4 possible problems, google WSAEINVAL\n");
+				std::cin.get();
+				break;
+			case WSAEISCONN:
+				printf("Function not permitted to connect to socket\n");
+				std::cin.get();
+				break;
+			case WSAENETRESET:
+				printf("Datagram socket lifetime expired\n");
+				std::cin.get();
+				break;
+			case WSAENOTSOCK:
+				printf("'s' parameter is not a socket\n");
+				std::cin.get();
+				break;
+			case WSAEOPNOTSUPP:
+				printf("Google WSAEOPNOTSUPP\n");
+				std::cin.get();
+				break;
+			case WSAESHUTDOWN:
+				printf("Socket has been shut down\n");
+				std::cin.get();
+				break;
+			case WSAEWOULDBLOCK:
+				printf("WSAEWOULDBLOCK\nSocket is marked as nonblocking and recvfrom would block\n");
+				std::cin.get();
+				break;
+			case WSAEMSGSIZE:
+				printf("Message is too large for buffer\n");
+				std::cin.get();
+				break;
+			case WSAETIMEDOUT:
+				printf("Connection has been dropped, google WSAETIMEDOUT\n");
+				std::cin.get();
+				break;
+			case WSAECONNRESET:
+				printf("Google WSAECONNRESET\n");
+				std::cin.get();
 				break;
 			default:
 				break;
