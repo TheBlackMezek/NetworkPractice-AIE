@@ -40,19 +40,19 @@ unsigned int Address::GetAddress() const
 
 unsigned char Address::GetA() const
 {
-
+	return 0;
 }
 unsigned char Address::GetB() const
 {
-
+	return 0;
 }
 unsigned char Address::GetC() const
 {
-
+	return 0;
 }
 unsigned char Address::GetD() const
 {
-
+	return 0;
 }
 
 unsigned short Address::GetPort()

@@ -135,7 +135,7 @@ int main()
 		{
 			printf("%s\n", packetData);
 		}
-		else if(bytes == SOCKET_ERROR)
+		/*else if(bytes == SOCKET_ERROR)
 		{
 			printf("Socket error occurred:\n");
 			int error = WSAGetLastError();
@@ -204,7 +204,7 @@ int main()
 			default:
 				break;
 			}
-		}
+		}*/
 
 		unsigned int from_address = ntohl(from.sin_addr.s_addr);
 

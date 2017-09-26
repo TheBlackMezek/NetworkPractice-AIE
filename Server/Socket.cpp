@@ -108,7 +108,7 @@ void Socket::close()
 
 bool Socket::isOpen()
 {
-
+	return 0;
 }
 
 bool Socket::Send(const Address& destionation,
